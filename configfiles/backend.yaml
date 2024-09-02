@@ -15,10 +15,15 @@ spec:
         app: backend
     spec:
       containers:
-      - image: eshwar333/todo-backend
+      - image: eshwar333/todo-backend:v1
         name: todo-backend
         ports:
         - containerPort: 8000
+        env:
+        - name: DB_USERNAME
+          value: cm9vdAo=
+        - name: DB_PASSWORD
+          value: cm9vdDEyMwo=
 
 ---
 
