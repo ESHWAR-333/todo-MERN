@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: "your-domain-or-ip" # Replace with your domain or IP
+    - host: "346048b8-c135-4803-a3b5-26e2e5da78db-10-244-6-128-30008.papa.r.killercoda.com" # Replace with your domain or IP
       http:
         paths:
           - path: /api/todos(/|$)(.*)
@@ -17,7 +17,7 @@ spec:
                 name: backend
                 port:
                   number: 8000
-          - path: /(/|$)(.*)
+          - path: /(.*)
             pathType: Prefix
             backend:
               service:
