@@ -15,7 +15,7 @@ spec:
         app: backend
     spec:
       containers:
-      - image: eshwar333/todo-backend:v1
+      - image: eshwar333/todo-backend:v2
         name: todo-backend
         ports:
         - containerPort: 8000
