@@ -6,11 +6,11 @@ import { addTodo, getAllTodos, toggleTodoDone, updateTodo, deleteTodo } from '..
 const route = express.Router();
 
 
-route.post('/todos', addTodo)
-route.get('/todos', getAllTodos);
-route.get('/todos/:id', toggleTodoDone);
-route.put('/todos/:id', updateTodo);
-route.delete('/todos/:id', deleteTodo);
+route.post('/api/todos', addTodo)
+route.get('/api/todos', getAllTodos);
+route.get('/api/todos/:id', toggleTodoDone);
+route.put('/api/todos/:id', updateTodo);
+route.delete('/api/todos/:id', deleteTodo);
 
 
 export default route;
