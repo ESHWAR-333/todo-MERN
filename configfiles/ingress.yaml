@@ -10,7 +10,7 @@ spec:
     - host: "your-domain-or-ip" # Replace with your domain or IP
       http:
         paths:
-          - path: /api(/|$)(.*)
+          - path: /api/todos(/|$)(.*)
             pathType: Prefix
             backend:
               service:
